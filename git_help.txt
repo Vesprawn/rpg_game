@@ -1,0 +1,44 @@
+git config -l
+git config -- global user.name "Mike Malcolm" - sets name
+git config -- global user.email "mike.malcolm.developer@gmail.com" - sets email
+git config -- global color.ui true
+clear - clears lines
+
+git init - inistialise git repo
+
+git status - shows edited or added files 
+git add filename - adds file to tracking called staging
+git add . - stage everything
+git add *.html stage every file that is html
+
+git commit - stats commit process
+press i to enter insert mode
+type message then press esc
+type :wq then enter to come back
+
+
+
+git commit -m 'message' - adds commit without stesp above much faster
+git log shows history
+
+touch .gitignore - creates git ignore file in windows (cant do it any other way)
+
+Branching
+git branch branchname
+git checkout branchname
+
+changes persist if you switch branches but are not ready to comit changes you need to stash changes you are not ready to commit before switchign branches
+
+git stash - hids tracked uncomiited changes
+git stash apply - addeds them back
+
+Remote repositoories
+git remote - to see the list of remote repos
+
+git  clone remote_website - pulsl clone of remote repo into own folder use cd to switch to that folder
+
+
+origin is the local name for the report repo instead of typing all the url out again
+git fetch origin gets the changes from the repo need to manually merge
+
+git pull origin will get the changes ad merge them
