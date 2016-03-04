@@ -1,0 +1,10 @@
+#container {
+	background: #000;
+	position: relative;
+}
+
+.canvas_layer {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
