@@ -1,5 +1,8 @@
 var Engine = (function($this) {
     $this.renderScreen = function() {
+        $this.currentMap().render();
+    };
+    $this.renderScrdeen = function() {
         map_ctx.clearRect(0, 0, COLS * TILE_SIZE, ROWS * TILE_SIZE)
         var start_row = 0,
             start_col = 0,
@@ -84,4 +87,6 @@ var Engine = (function($this) {
         player_ctx.fillStyle = "red";
         player_ctx.fillRect(map_center_x * TILE_SIZE, map_center_y * TILE_SIZE, TILE_SIZE, TILE_SIZE);
     };
+
+    return $this;
 })(Engine || {});

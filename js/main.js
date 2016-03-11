@@ -1,4 +1,5 @@
 var Engine = (function($this) {
+	$this.hero = null;
 	var map_canvas = document.getElementById('map'),
 		map_ctx = map_canvas.getContext('2d'),
 		player_canvas = document.getElementById('player'),
@@ -163,11 +164,21 @@ var Engine = (function($this) {
 		$this.drawMap();
 	};
 
-	$this.createMap();
+	$this.initHero = function() {
+		$this.hero = new $this.Entity({name: 'mike', location:{x: 0, y: 0}});
+	};
+
+	$this.init = function() {
+		// $this.createMap();
+		$this.initMap();
+		$this.initGameLoop();
+		$this.initHero();
+	};
+
+	
 /*	$this.drawMap();*/
 
 	_setupEvents();
 
 	return $this;
 })(Engine || {});
-
