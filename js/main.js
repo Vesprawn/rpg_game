@@ -1,5 +1,6 @@
 var Engine = (function($this) {
 	$this.hero = null;
+    $this.antihero = null;
 	var map_canvas = document.getElementById('map'),
 		map_ctx = map_canvas.getContext('2d'),
 		player_canvas = document.getElementById('player'),
