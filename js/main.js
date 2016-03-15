@@ -172,8 +172,8 @@ var Engine = (function($this) {
 	$this.init = function() {
 		// $this.createMap();
 		$this.initMap();
-		$this.initGameLoop();
-		$this.initHero();
+		// $this.initGameLoop();
+		// $this.initHero();
 	};
 
 	
